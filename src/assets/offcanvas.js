@@ -8,6 +8,7 @@ $(document).ready(function () {
 	var bsOverlay = $('.bs-canvas-overlay');
 	function showOffCanvas(selector)
 	{
+		bsOverlay = $('.bs-canvas-overlay');
 		$(selector).addClass('mr-0');
 		$(selector + ' .bs-canvas-close').attr('aria-expanded', "true");
 		$('[data-target="' + selector + '"], a[href="' + selector + '"]').attr('aria-expanded', "true");
