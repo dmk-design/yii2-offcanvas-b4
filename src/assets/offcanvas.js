@@ -24,7 +24,7 @@ $(document).ready(function () {
 		return false;
 	});
 	
-	$('.bs-canvas-close, .bs-canvas-overlay').on('click', function(){
+	$(document).on('.bs-canvas-close, .bs-canvas-overlay','click', function(){
 		var elm;
 		if($(this).hasClass('bs-canvas-close')) {
 			elm = $(this).closest('.bs-canvas');
