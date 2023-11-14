@@ -1,0 +1,39 @@
+<?php 
+
+namespace dmkdesign\offcanvas;
+
+use yii\web\AssetBundle;
+
+/**
+ * @author John Martin <john.itvn@gmail.com>
+ * @since 1.0
+ */
+class OffcanvasAsset extends AssetBundle
+{
+    public $sourcePath = '@dmkdesign/assets';
+
+//    public $publishOptions = [
+//        'forceCopy' => true,
+//    ];
+
+    public $css = [
+        'offcanvas.css'
+    ];
+
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+    ];
+    
+   public function init() {
+       // In dev mode use non-minified javascripts
+       $this->js = YII_DEBUG ? [
+           'offcanvas.js',
+       ]:[
+            'offcanvas.min.js',
+       ];
+
+       parent::init();
+   }
+}

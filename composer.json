@@ -1,0 +1,22 @@
+{
+    "name": "dmk-design/yii2-offcanvas-b4",
+    "description": "Extension for adding collapsible Sidebar to Yii2 project with Ajax Content",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","sidebar"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Aaron Kennedy",
+            "email": "aaron@dmkdesign.ca",
+            "homepage": "https://github.com/dmk-designs?tab=repositories"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dmkdesign\\offcanvas\\": ""
+        }
+    }
+}
