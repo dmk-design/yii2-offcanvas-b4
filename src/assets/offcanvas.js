@@ -8,9 +8,9 @@ $(document).ready(function () {
 	var bsOverlay = $('.bs-canvas-overlay');
 	function showOffCanvas(selector)
 	{
-		$(elm).addClass('mr-0');
-		$(elm + ' .bs-canvas-close').attr('aria-expanded', "true");
-		$('[data-target="' + elm + '"], a[href="' + elm + '"]').attr('aria-expanded', "true");
+		$(selector).addClass('mr-0');
+		$(selector + ' .bs-canvas-close').attr('aria-expanded', "true");
+		$('[data-target="' + selector + '"], a[href="' + selector + '"]').attr('aria-expanded', "true");
 		if(bsOverlay.length)
 			bsOverlay.addClass('show');
 		return false;
