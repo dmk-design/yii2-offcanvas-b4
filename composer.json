@@ -11,12 +11,17 @@
             "homepage": "https://github.com/dmk-designs?tab=repositories"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "^2"
     },
     "autoload": {
         "psr-4": {
-            "dmkdesign\\offcanvas\\": ""
+            "dmkdesign\\offcanvas\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "bootstrap": "dmkdesign\\offcanvas\\Bootstrap"
+        }
 }
