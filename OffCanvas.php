@@ -1,6 +1,6 @@
 <?php
 
-namespace dmkdesign\offcanvas;
+namespace dmkdesign\offcanvas\OffCanvas;
 
 use dmkdesign\offcanvas\OffCanvasAsset;
 /**
