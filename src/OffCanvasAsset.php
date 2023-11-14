@@ -19,6 +19,8 @@ class OffCanvasAsset extends AssetBundle
         'offcanvas.css'
     ];
 
+    public $js = ['offcanvas.js'];
+
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
@@ -26,12 +28,12 @@ class OffCanvasAsset extends AssetBundle
     ];
     
    public function init() {
-       // In dev mode use non-minified javascripts
-       $this->js = YII_DEBUG ? [
-           'offcanvas.js',
-       ]:[
-            'offcanvas.min.js',
-       ];
+    //    // In dev mode use non-minified javascripts
+    //    $this->js = YII_DEBUG ? [
+    //        'offcanvas.js'
+    //    ]:[
+    //         'offcanvas.min.js',
+    //    ];
 
        parent::init();
    }
