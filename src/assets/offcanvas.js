@@ -81,6 +81,7 @@
 	
 //these can't be used for instances of offCanvas but we should override them in the code that creates the instance.
 	$('[data-toggle="canvas"]').on('click', function(){
+		bsOverlay = $('.bs-canvas-overlay');
 		var ctrl = $(this), 
 			elm = ctrl.is('button') ? ctrl.data('target') : ctrl.attr('href');
 		//offCanvas = new OffCanvas(elm); //we should have this defined already
