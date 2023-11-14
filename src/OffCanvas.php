@@ -25,7 +25,7 @@ class OffCanvas extends \yii\base\Widget
         if($this->includeBackdrop)
         {
             $view->registerJs(
-                'jQuery("body").prepend("<div class="bs-canvas-overlay bg-dark position-fixed w-100 h-100"></div>");'
+                "jQuery('body').prepend('<div class=\"bs-canvas-overlay bg-dark position-fixed w-100 h-100\"></div>');"
             );
         }
     }
