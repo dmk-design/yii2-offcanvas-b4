@@ -1,11 +1,10 @@
 <?php 
-
 namespace dmkdesign\offcanvas;
 
 use yii\web\AssetBundle;
 
 /**
- * @author John Martin <john.itvn@gmail.com>
+ * @author Aaron Kennedy <aaron@dmkdesign.ca>
  * @since 1.0
  */
 class OffCanvasAsset extends AssetBundle
