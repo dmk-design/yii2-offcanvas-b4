@@ -8,9 +8,9 @@ use yii\web\AssetBundle;
  * @author John Martin <john.itvn@gmail.com>
  * @since 1.0
  */
-class OffcanvasAsset extends AssetBundle
+class OffCanvasAsset extends AssetBundle
 {
-    public $sourcePath = '@dmkdesign/assets';
+    public $sourcePath = '@dmkdesign/offcanvas/assets';
 
 //    public $publishOptions = [
 //        'forceCopy' => true,

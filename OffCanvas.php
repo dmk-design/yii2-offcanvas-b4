@@ -1,10 +1,13 @@
-<?php 
-namespace dmkdesign\offcanvas;
+<?php
 
-use Yii;
-use yii\base\Widget;
+namespace dmkdesign\OffCanvas;
 
-Class OffCanvas extends Widget{
+use dmkdesign\offcanvas\OffCanvasAsset;
+/**
+ * This is just an example.
+ */
+class OffCanvas extends \yii\base\Widget
+{
     const TYPE_DEFAULT = 'default';
     const TYPE_RIGHT = 'right';
     const TYPE_LEFT = 'left';
@@ -18,7 +21,7 @@ Class OffCanvas extends Widget{
     {
         parent::init();
         $view = $this->getView();
-        OffcanvasAsset::register($view);
+        OffCanvasAsset::register($view);
         if($this->includeBackdrop)
         {
             $view->registerJs(
@@ -44,6 +47,6 @@ Class OffCanvas extends Widget{
        <div class="modal-footer  px-3 py-5">
         </div>    
         </div>';
-        echo content;
+        echo $content;
     } 
 }

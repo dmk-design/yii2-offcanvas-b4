@@ -5,16 +5,21 @@
  * @author Aaron Kennedy aaron@dmkdesign.ca
  */
 $(document).ready(function () {
-
-    var bsOverlay = $('.bs-canvas-overlay');
-	$('[data-toggle="canvas"]').on('click', function(){
-		var ctrl = $(this), 
-			elm = ctrl.is('button') ? ctrl.data('target') : ctrl.attr('href');
+	var bsOverlay = $('.bs-canvas-overlay');
+	function showOffCanvas(selector)
+	{
 		$(elm).addClass('mr-0');
 		$(elm + ' .bs-canvas-close').attr('aria-expanded', "true");
 		$('[data-target="' + elm + '"], a[href="' + elm + '"]').attr('aria-expanded', "true");
 		if(bsOverlay.length)
 			bsOverlay.addClass('show');
+		return false;
+	}
+
+	$('[data-toggle="canvas"]').on('click', function(){
+		var ctrl = $(this), 
+			elm = ctrl.is('button') ? ctrl.data('target') : ctrl.attr('href');
+		showOffCanvas(elm);
 		return false;
 	});
 	
