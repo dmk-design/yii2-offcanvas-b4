@@ -16,7 +16,7 @@ class OffCanvas extends \yii\base\Widget
     public $includeBackdrop=true;
     public $location = self::TYPE_RIGHT;
     //sidebar location
-    
+    //TODO add location options
     public function init()
     {
         parent::init();

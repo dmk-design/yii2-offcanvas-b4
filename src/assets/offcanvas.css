@@ -21,6 +21,15 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: 33%;		
+	position:relative;
+}
+
+.bs-canvas .modal-footer
+{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   border-top:solid 1px #CCC;
 }
 
 .bs-canvas-left {

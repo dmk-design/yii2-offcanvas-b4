@@ -29,3 +29,16 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 <?= \dmkdesign\offcanvas\OffCanvas::widget(); ?>```
+
+```javascript
+
+    let sidebar = new OffCanvas('.bs-canvas-right');
+    //if you want the backdrop to open and close
+    sidebar.insertBackdrop()
+    sidebar.setTitle("My Title");
+    sidebar.setContent("<div>My Content</div>")
+    sidebar.setFooter("Buttons?")
+    sidebar.show();
+
+
+```
