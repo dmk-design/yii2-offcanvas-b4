@@ -29,7 +29,9 @@
    position: absolute;
    bottom: 0;
    left: 0;
-   border-top:solid 1px #CCC;
+   border-top:solid 1px #CCC !important;
+   width:100%;
+
 }
 
 .bs-canvas-left {
