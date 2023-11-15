@@ -44,7 +44,7 @@ class OffCanvas extends \yii\base\Widget
                 <div class="modal-body bs-canvas-content px-3 py-5">
                     <!-- Off-canvas content -->
                 </div>   
-                <div class="offcanvas-footer  px-3 py-5">Footer Stuff</div>    
+                <div class="modal-footer  px-3 py-5">Footer Stuff</div>    
             </div>';
         echo $content;
     } 
