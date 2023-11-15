@@ -15,7 +15,7 @@
 		};
 
 		this.selector = canvasId;
-		this.canvas = $("#"+canvasId);
+		this.canvas = $(canvasId);
 
 		this.dialog = $(canvasId).find('.offcanvas-dialog');
 
