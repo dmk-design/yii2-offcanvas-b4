@@ -17,13 +17,13 @@
 		this.selector = canvasId;
 		this.canvas = $(canvasId);
 
-		this.dialog = $(canvasId).find('.offcanvas-dialog');
+		//this.dialog = $(canvasId).find('.offcanvas-dialog');
 
-		this.header = $(canvasId).find('.offcanvas-header');
+		this.header = $(canvasId).find('.modal-header');
 
-		this.content = $(canvasId).find('.offcanvas-body');
+		this.content = $(canvasId).find('.modal-body');
 
-		this.footer = $(canvasId).find('.offcanvas-footer');
+		this.footer = $(canvasId).find('.modal-footer');
 
 		this.insertBackdrop = function()
 		{
