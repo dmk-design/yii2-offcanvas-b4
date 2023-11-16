@@ -36,7 +36,7 @@ class OffCanvas extends \yii\base\Widget
     {   $styleOverride = "";
         if(!empty($this->width))
         {
-            $styleOverride = " style='width:".$this->width."margin-".$this->location.":-".$this->width."' ";
+            $styleOverride = " style='width:".$this->width."; margin-".$this->location.":-".$this->width."' ";
         }
        $content = 
             '<div id="bs-canvas-'.$this->location.'" class="bs-canvas bs-canvas-'.$this->location.' position-fixed bg-light h-100" '.$styleOverride.'data-width="'.$this->width.'">
