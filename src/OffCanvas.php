@@ -3,6 +3,7 @@
 namespace dmkdesign\offcanvas;
 
 use dmkdesign\offcanvas\OffCanvasAsset;
+
 /**
  * This is just an example.
  */
@@ -16,11 +17,13 @@ class OffCanvas extends \yii\base\Widget
     public $includeBackdrop=true;
     public $location = self::TYPE_RIGHT;
     //sidebar location
-    //TODO add location options
-    public function init()
+    //TODO add location options and width
+    public function init($options)
     {
+
         parent::init();
         $view = $this->getView();
+        
         OffCanvasAsset::register($view);
         
     }
@@ -33,18 +36,18 @@ class OffCanvas extends \yii\base\Widget
     {   $styleOverride = "";
         if(!empty($this->width))
         {
-            $styleOverride = " style='width:".$this->width."' ";
+            $styleOverride = " style='width:".$this->width."margin-".$this->location.":-".$this->width."' ";
         }
        $content = 
-            '<div id="bs-canvas-'.$this->location.'" class="bs-canvas bs-canvas-'.$this->location.' position-fixed bg-light h-100" '.$styleOverride.'>
+            '<div id="bs-canvas-'.$this->location.'" class="bs-canvas bs-canvas-'.$this->location.' position-fixed bg-light h-100" '.$styleOverride.'data-width="'.$this->width.'">
                 <header class="modal-header bs-canvas-header p-3 overflow-auto">
                     <button type="button" class="bs-canvas-close close" aria-label="Close" aria-expanded="false"><span aria-hidden="true" >&times;</span></button>
                     <h4 class="modal-title d-inline-block mb-0 ">Canvas Header</h4>
                 </header>
-                <div class="modal-body bs-canvas-content px-3 py-5">
+                <div class="modal-body bs-canvas-content px-3 py-4">
                     <!-- Off-canvas content -->
                 </div>   
-                <div class="modal-footer px-3 py-5"><!-- Off-canvas footer --></div>    
+                <div class="modal-footer px-3 py-4"><!-- Off-canvas footer --></div>    
             </div>';
         echo $content;
     } 

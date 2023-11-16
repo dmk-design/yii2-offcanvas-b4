@@ -10,10 +10,10 @@
 
 	function OffCanvas(canvasId, options={})
 	{
-		this.defaults = {
-			insertBackdrop: true,
-		};
-
+		this.settings = $.extend({
+			insertBackdrop: true
+		},options);
+		
 		this.selector = canvasId;
 		this.canvas = $(canvasId);
 
@@ -44,8 +44,9 @@
 
 		this.hide = function()
 		{
-			elm.removeClass('mr-0');
-			$('.bs-canvas-close', elm).attr('aria-expanded', "false");
+			this.canvas.removeClass('mr-0');
+			$('.bs-canvas-close', this.selector).attr('aria-expanded', "false");
+			bsOverlay = $('.bs-canvas-overlay');
 			if(bsOverlay.length)
 				bsOverlay.removeClass('show');
 		}
