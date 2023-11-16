@@ -12,12 +12,14 @@ class OffCanvas extends \yii\base\Widget
     const TYPE_DEFAULT = 'default';
     const TYPE_RIGHT = 'right';
     const TYPE_LEFT = 'left';
+    public $options = [];
     //sidebar location
     //TODO add location options and width
     public function init()
     {
 
         parent::init();
+        $this->initOptions();
         $view = $this->getView();
         $styleOverride = "";
         OffCanvasAsset::register($view);
