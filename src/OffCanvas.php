@@ -18,7 +18,7 @@ class OffCanvas extends \yii\base\Widget
     public $location = self::TYPE_RIGHT;
     //sidebar location
     //TODO add location options and width
-    public function init($options)
+    public function init()
     {
 
         parent::init();
