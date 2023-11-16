@@ -28,7 +28,7 @@ class OffCanvas extends \yii\base\Widget
             $styleOverride = " style='width:".$this->options['width']."; margin-".$this->options['location'].":-".$this->options['width']."' ";
         }
         $content = 
-            '<div id="bs-canvas-'.$this->options['location'].'" class="bs-canvas bs-canvas-'.$this->options['location'].' position-fixed bg-light h-100" '.$styleOverride.'data-width="'.$this->width.'">
+            '<div id="bs-canvas-'.$this->options['location'].'" class="bs-canvas bs-canvas-'.$this->options['location'].' position-fixed bg-light h-100" '.$styleOverride.'data-width="'.$this->options['width'].'">
                 <header class="modal-header bs-canvas-header p-3 overflow-auto">
                     <button type="button" class="bs-canvas-close close" aria-label="Close" aria-expanded="false"><span aria-hidden="true" >&times;</span></button>
                     <h4 class="modal-title d-inline-block mb-0 ">Canvas Header</h4>
