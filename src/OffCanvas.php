@@ -31,7 +31,7 @@ class OffCanvas extends \yii\base\Widget
             '<div id="bs-canvas-'.$this->options['location'].'" class="bs-canvas bs-canvas-'.$this->options['location'].' position-fixed bg-light h-100" '.$styleOverride.'data-width="'.$this->options['width'].'">
                 <header class="modal-header bs-canvas-header p-3 overflow-auto">
                     <button type="button" class="bs-canvas-close close" aria-label="Close" aria-expanded="false"><span aria-hidden="true" >&times;</span></button>
-                    <h4 class="modal-title d-inline-block mb-0 ">Canvas Header</h4>
+                    <h4 class="modal-title d-inline-block mb-0 ">'.$this->options['title'].'</h4>
                 </header>
                 <div class="modal-body bs-canvas-content px-3 py-4"> 
                 <!-- Off-canvas content -->';
@@ -46,7 +46,7 @@ class OffCanvas extends \yii\base\Widget
     {   
 
        $content = 
-            '   </div>   
+            '</div>   
                 <div class="modal-footer px-3 py-4"><!-- Off-canvas footer --></div>    
             </div>';
         echo $content;
@@ -65,7 +65,8 @@ class OffCanvas extends \yii\base\Widget
         $this->options = array_merge([
             'width' => '',
             'includeBackdrop' => true,
-            'location' =>self::TYPE_RIGHT
+            'location' =>self::TYPE_RIGHT,
+            'title'=>"Canvas Title"
         ], $this->options);
     }
 }
