@@ -45,10 +45,18 @@ class OffCanvas extends \yii\base\Widget
     public function run()
     {   
 
-       $content = 
-            '</div>   
-                <div class="modal-footer px-3 py-4"><!-- Off-canvas footer --></div>    
-            </div>';
+       $content = '</div>';
+        if($this->options['footer']!= false)
+        {
+            $content.='<div class="modal-footer px-3 py-4"><!-- Off-canvas footer -->';
+            if($this->options['footer']!=true && !empty($this->options['footer']))
+            {
+                $content.=$this->options['footer'];
+            }
+            $content.= "</div> " ;
+        } 
+                
+        $content.= "</div> " ;
         echo $content;
     } 
 
@@ -66,7 +74,8 @@ class OffCanvas extends \yii\base\Widget
             'width' => '',
             'includeBackdrop' => true,
             'location' =>self::TYPE_RIGHT,
-            'title'=>"Canvas Title"
+            'title'=>"Canvas Title",
+            'footer'=>""
         ], $this->options);
     }
 }
