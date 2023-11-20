@@ -27,8 +27,13 @@
 
 		this.insertBackdrop = function()
 		{
-			$('body').prepend('<div class=\"bs-canvas-overlay bg-dark position-fixed w-100 h-100\"></div>');
+			if($('.bs-canvas-overlay').length===0)
+			{
+				$('body').prepend('<div class=\"bs-canvas-overlay bg-dark position-fixed w-100 h-100\"></div>');
+			
+			}
 			bsOverlay = $('.bs-canvas-overlay');
+			
 		}
 
 		this.show = function()

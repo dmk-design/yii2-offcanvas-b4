@@ -23,6 +23,10 @@ class OffCanvas extends \yii\base\Widget
         $view = $this->getView();
         $styleOverride = "";
         OffCanvasAsset::register($view);
+        if($this->options["includeBackdrop"]===true)
+        {
+            $view->registerJs("OffCanvas.insertBackdrop();");
+        }
         if(!empty($this->options['width']))
         {
             $styleOverride = " style='width:".$this->options['width']."; margin-".$this->options['location'].":-".$this->options['width']."' ";
