@@ -10,6 +10,7 @@
 
 	function OffCanvas(canvasId, options={})
 	{
+	
 		this.settings = $.extend({
 			insertBackdrop: true
 		},options);
@@ -25,7 +26,7 @@
 
 		this.footer = $(canvasId).find('.modal-footer');
 
-		this.insertBackdrop = function()
+		insertBackdrop = function()
 		{
 			if($('.bs-canvas-overlay').length===0)
 			{
