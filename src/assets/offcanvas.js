@@ -26,17 +26,6 @@
 
 		this.footer = $(canvasId).find('.modal-footer');
 
-		insertBackdrop = function()
-		{
-			if($('.bs-canvas-overlay').length===0)
-			{
-				$('body').prepend('<div class=\"bs-canvas-overlay bg-dark position-fixed w-100 h-100\"></div>');
-			
-			}
-			bsOverlay = $('.bs-canvas-overlay');
-			
-		}
-
 		this.show = function()
 		{
 			bsOverlay = $('.bs-canvas-overlay');
@@ -85,7 +74,16 @@
 		};
 	}
 	
-	
+	insertCanvasBackdrop = function()
+		{
+			if($('.bs-canvas-overlay').length===0)
+			{
+				$('body').prepend('<div class=\"bs-canvas-overlay bg-dark position-fixed w-100 h-100\"></div>');
+			
+			}
+			bsOverlay = $('.bs-canvas-overlay');
+			
+		}
 //these can't be used for instances of offCanvas but we should override them in the code that creates the instance.
 	$('[data-toggle="canvas"]').on('click', function(){
 		bsOverlay = $('.bs-canvas-overlay');

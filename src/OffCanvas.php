@@ -25,7 +25,7 @@ class OffCanvas extends \yii\base\Widget
         OffCanvasAsset::register($view);
         if($this->options["includeBackdrop"]===true)
         {
-            $view->registerJs("OffCanvas.insertBackdrop();");
+            $view->registerJs("insertCanvasBackdrop()");
         }
         if(!empty($this->options['width']))
         {
