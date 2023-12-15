@@ -24,9 +24,13 @@
 	position:relative;
 }
 
+.bs-canvas .modal-content
+{
+	overflow-y:scroll;
+}
 .bs-canvas .modal-footer
 {
-   /*position: absolute;*/
+   position: absolute;
    bottom: 0;
    left: 0;
    border-top:solid 1px #CCC !important;
