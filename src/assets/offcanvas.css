@@ -24,7 +24,7 @@
 	position:relative;
 }
 
-.bs-canvas .modal-content
+.bs-canvas .modal-body
 {
 	overflow-y:scroll;
 }
