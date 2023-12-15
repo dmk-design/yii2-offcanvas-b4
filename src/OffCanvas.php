@@ -52,12 +52,12 @@ class OffCanvas extends \yii\base\Widget
        $content = '</div></div>';
         if($this->options['footer']!= false)
         {
-            $content.='<div class="modal-footer px-3 py-4"><!-- Off-canvas footer -->';
+            $content.='<div class="bs-convas"><div class="modal-footer px-3 py-4"><!-- Off-canvas footer -->';
             if($this->options['footer']!=true && !empty($this->options['footer']))
             {
                 $content.=$this->options['footer'];
             }
-            $content.= "</div> " ;
+            $content.= "</div></div> " ;
         } 
                 
         echo $content;
