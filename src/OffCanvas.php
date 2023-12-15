@@ -49,7 +49,7 @@ class OffCanvas extends \yii\base\Widget
     public function run()
     {   
 
-       $content = '</div>';
+       $content = '</div></div>';
         if($this->options['footer']!= false)
         {
             $content.='<div class="modal-footer px-3 py-4"><!-- Off-canvas footer -->';
@@ -60,7 +60,6 @@ class OffCanvas extends \yii\base\Widget
             $content.= "</div> " ;
         } 
                 
-        $content.= "</div> " ;
         echo $content;
     } 
 
