@@ -24,6 +24,12 @@
 	position:relative;
 }
 
+.bs-canvas .modal-header
+{
+	overflow:none;
+	padding:16px;
+}
+
 .bs-canvas .modal-body
 {
 	overflow-y:scroll;
