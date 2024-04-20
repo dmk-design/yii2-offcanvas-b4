@@ -26,7 +26,7 @@
 
 .bs-canvas .modal-header
 {
-	overflow:none;
+	overflow:hidden;
 	padding:16px;
 }
 
