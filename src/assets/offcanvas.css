@@ -28,12 +28,13 @@
 {
 	overflow:hidden;
 	padding:16px;
+	height:5vh;
 }
 
 .bs-canvas .modal-body
 {
 	overflow-y:scroll;
-	height:90vh;
+	height:85vh;
 }
 .bs-canvas .modal-footer
 {
